@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="12dp">
+
+        <com.guojiel.shootarrowdemo.MicLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"/>
+
+        <com.guojiel.shootarrowdemo.ArrowLayout
+            android:id="@+id/mArrowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <CheckBox
+            android:id="@+id/mCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="左边人射箭"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="from"/>
+            <RadioGroup
+                android:id="@+id/mLeftRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/frb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="1"/>
+                <RadioButton
+                    android:id="@+id/frb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"/>
+                <RadioButton
+                    android:id="@+id/frb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"/>
+                <RadioButton
+                    android:id="@+id/frb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="to"/>
+            <RadioGroup
+                android:id="@+id/mRightRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/trb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"/>
+                <RadioButton
+                    android:id="@+id/trb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"/>
+                <RadioButton
+                    android:id="@+id/trb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"/>
+                <RadioButton
+                    android:id="@+id/trb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="4"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发射"/>
+
+    </LinearLayout>
+
+</FrameLayout>
